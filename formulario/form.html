@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <!-- CABECERA -->
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+        <link rel="icon" href="../imagenes/icono.png" type="image/png" sizes="16x16">
+    </head>
+    <body>
+        <h2>¿Quieres contactar con nosotros?</h2>
+        <p>Rellena el siguiente formulario y te responderemos lo antes posible. 
+            O vuelve con <a href='../index.html'>Fanta</a>
+        </p>
+        <form action="contactos.php" method="post">
+            <p>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <br>
+                    <input type="text" name="name" id="nombre" placeholder="Escribe tu nombre">
+                    <br>
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" name="correo" id="email" placeholder="Pon tu correo" required>
+                    <br>
+                    <br>
+                    <label for="edad">Edad:</label>
+                    <br>
+                    <input type="number" name="años" id="edad" placeholder="Años" min="5" max="90">
+                </fieldset>
+            </p>
+            <p>
+                <fieldset>
+                    <legend>¿Qué mascotas tienes?</legend>
+                    <input type="checkbox" id="mascota1" name="mascota1" value="gato">
+                    <label for="mascota1"> Gato</label><br>
+                    <input type="checkbox" id="mascota2" name="mascota2" value="perro">
+                    <label for="mascota2"> Perro</label><br>
+                    <input type="checkbox" id="mascota3" name="mascota3" value="acuario">
+                    <label for="mascota3"> Acuario (peces)</label><br>
+                    <input type="checkbox" id="mascota4" name="mascota4" value="ave">
+                    <label for="mascota4"> Aves</label><br>
+                    <input type="checkbox" id="mascota5" name="mascota5" value="reptiles">
+                    <label for="mascota5"> Reptiles </label>
+                    <label for="que_reptil"> </label>
+                    <input type="text" name="que_reptil" id="que_reptil" placeholder="¿Cual o cuales?">
+                </fieldset>
+            </p>
+            <p>
+                <label for="preferida">¿Cuales son tus preferidos?</label>
+                <select id="preferida" name="preferida">
+                    <option value="perro">Perros</option>
+                    <option value="gato">Gatos</option>
+                    <option value="peces">Peces</option>
+                    <option value="ave">Pájaros</option>
+                    <option value="reptiles">Reptiles</option>
+                </select>
+            </p>
+            <p>
+                <label for="carta">¿Nos cuentas algo?</label><br>
+                <textarea id="carta" name="carta"></textarea>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
